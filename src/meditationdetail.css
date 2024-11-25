@@ -1,0 +1,181 @@
+.meditation-container {
+    display: flex;
+    background-color: #FFD700;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    
+  }
+  
+  .text-section {
+    padding: 20px;
+    text-wrap: nowrap;
+    padding-left: 10%;
+    padding-top: 10%;
+  }
+  
+  .text-section h1 {
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .text-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .text-section p {
+    font-size: 18px;
+    text-align: left;
+    color: black;
+    margin-top: 30px;
+  }
+  
+  .meditation-player {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 15px;
+    margin-top: 30px;
+    height: 75px;
+  }
+  
+  .play-button {
+    background-color: #FF4500;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    width: 75px;
+    height: 47px;
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .play-button:hover{
+    background-color: #171717;
+  }
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /*.try-button {
+    background-color: white;
+    color: #FF4500;
+    border: 2px solid #FF4500;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  */
+
+
+
+
+
+  .meditation-main {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap;
+    scroll-behavior: smooth; /* Optional for smooth scrolling */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 10px 0;
+    padding-top: 100px;
+  }
+  
+  .meditation-main > div {
+    flex: 0 0 auto; /* Prevents items from shrinking or expanding */
+    width: 400px; /* Adjust width as needed */
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .meditation-main img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .meditation-main h1 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+    padding-left: 50px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .meditation-main p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+    text-align: left;
+  }
+  .imageflex{
+    display: flex;
+    flex-direction: row;
+  }
+  /* Optional: Hide horizontal scrollbar on certain browsers */
+  .meditation-main::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .imageflex h1 {
+    text-align: center;
+    padding-top: 50px;
+    cursor: pointer;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+   gap:20px;
+    padding-top: 100px;
+    
+  }
+  
+  .box {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 300px;
+    background-color: #f4f4f4;
+    text-align: left;
+    gap: 20px; 
+    border-radius: 8px;
+  
+  }
+  
+  h2 {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  ul {
+    list-style-type: disc;
+text-align: left;
+margin-left: 12px;
+padding-top: 50px;
+    
+  }
+  
+  li {
+    margin-bottom: 10px;
+    text-align: left;
+  }
+   p{
+    text-align: left;
+   }

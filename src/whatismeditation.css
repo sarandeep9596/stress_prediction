@@ -1,0 +1,180 @@
+.meditationpage {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+    background-color: #FFD700;
+    padding: 48px;
+    overflow-x: hidden;
+}
+
+.whatmeditation {
+    flex: 1;
+    max-width: 500px; 
+}
+
+.whatmeditation h1 {
+    font-size: 48px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
+.whatmeditation p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+    margin-bottom: 32px;
+}
+
+.whatmeditation button {
+    background-color: #0066FF;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: fit-content;
+    font-size: 16px;
+}
+
+.whatimage {
+    flex: 1;
+    max-width: 500px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatimage img {
+    max-width: 100%; 
+    max-height: 80vh;
+    border-radius: 16px;
+    object-fit: contain;
+}
+
+
+.section_left {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.section_left a img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 16px;
+}
+
+.left_description {
+    width: 50%;
+    padding-right: 24px;
+}
+
+.left_description h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.left_description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+
+.section_right {
+    display: flex;
+    flex-direction: row-reverse; /* This puts the image on the right */
+    align-items: center;
+    gap: 48px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 48px 24px;
+}
+
+.section_right a img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    border-radius: 16px;
+}
+
+.right_description {
+    width: 50%;
+    padding-left: 24px;
+}
+
+.right_description h1 {
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.right_description p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.questions h1{
+text-align: center;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.faq-item {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    background-color: #faf7f5;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.faq-question {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    background: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 500;
+}
+
+.plus-icon {
+    font-size: 24px;
+    color: #666;
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .plus-icon {
+    transform: rotate(45deg);
+}
+
+.faq-answer {
+    display: none;
+    padding: 0 24px 24px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.faq-answer.active {
+    display: block;
+}

@@ -1,0 +1,49 @@
+.chatbox{
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    background-image: url('calmlyfirst.png');
+    background-size: cover;
+    padding: 1.5rem;
+    border-radius: 2rem;
+}
+.descrp{
+padding-left: 10%;
+padding-top: 10%;
+}
+.descrp h1{
+    font-size: 35px;
+    color: black;
+}
+.descrp p{
+    font-size: 20px;
+    text-align: left;
+    color: black;
+    margin-top: 30px;
+}
+.descrp button{
+    color: white;
+    background-color:#0000FF;
+    border-radius: 25px;
+    width: 30%;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 30px;
+}
+.chatimg{
+    padding-left: 20%;
+    padding-top: 15%;
+    width: 30vw;
+    height: 50vh;
+
+}
+.chatimage {
+    position: absolute;
+    left: 20%;
+    bottom: 10%;
+    width: 250px;
+    height: auto;
+    
+}

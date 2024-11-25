@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #FFE5EC 0%, #FFF0F5 100%);
+    min-height: 100vh;
+}
+
+.explore-container {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.explore-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 50px;
+    text-align: left;
+    font-weight: 400;
+}
+
+.explore-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    gap: 30px;
+    padding: 20px;
+}
+.category-card {
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.category-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 22px;
+    background: linear-gradient(45deg, rgba(255,255,255,0.5), rgba(255,255,255,0.2));
+    z-index: -1;
+}
+
+.mental-health {
+    box-shadow: 0 8px 32px rgba(76, 201, 240, 0.3);
+}
+
+.meditation {
+    box-shadow: 0 8px 32px rgba(255, 140, 66, 0.3);
+}
+
+.mindfulness {
+    box-shadow: 0 8px 32px rgba(67, 97, 238, 0.3);
+}
+
+.sleep {
+    box-shadow: 0 8px 32px rgba(114, 9, 183, 0.3);
+}
+
+.category-card img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    color: #333;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: auto;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 1024px) {
+    .explore-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+}
+
+@media (max-width: 640px) {
+    .explore-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .explore-title {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+    
+    .explore-container {
+        padding: 40px 20px;
+    }
+}

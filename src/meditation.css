@@ -1,0 +1,177 @@
+body {
+    margin: 0; /* Ensure no margin on body or html */
+    padding: 0;
+    width: 100%; /* Body takes full width */
+    height: 100%; /* Body takes full height */
+    box-sizing: border-box; /* Include padding and borders in width/height */
+    overflow-x: hidden; /* Prevent horizontal scrolling if any overflow occurs */
+}
+.contentmeditation {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    width: 100vw; /* Full viewport width */
+    height: 90vh; /* Adjust height based on content */
+    margin: 0; /* Remove any margin causing the section to shrink */
+    padding: 1.5rem;
+    background-color: #FFFF00;
+    border-radius: 1rem;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+/* Description section styles */
+.description {
+    padding: 60px 0;
+}
+
+.description h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.description p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.explore-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.explore-link:hover {
+    transform: translateX(8px);
+}
+
+/* Articles section styles */
+.articles {
+    padding: 20px 0;
+}
+
+.articles h1, .trending h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #1a1a1a;
+}
+
+.herosection {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.herosection div {
+    border-radius: 16px;
+    padding: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.herosection div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+    background-color: aliceblue;
+}
+
+.herosection img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.herosection p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.herosection button {
+    background-color: rgb(223, 191, 31);
+    cursor: pointer;
+    border-radius: 100px;
+    margin-top: 12px;
+}
+
+/* Special handling for the last article */
+.art6 img {
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Trending section styles */
+.trending {
+    padding: 20px 0;
+}
+
+.trending ul {
+    list-style: none;
+}
+
+.trending ul li {
+    margin-bottom: 16px;
+}
+
+.trending ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.trending ul li a:hover {
+    background-color: white;
+    color: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.mediback {
+    position: relative; /* Position it relative to the nearest positioned ancestor */
+    bottom: 89%; /* Adjust the vertical placement */
+    left: -10%; /* Adjust the horizontal placement */
+    width: auto; /* Adjust size as needed */
+    height: auto; /* Adjust size as needed */
+
+}
+/* Responsive design */
+@media (max-width: 1200px) {
+    .contentmeditation {
+        grid-template-columns: 1fr 2fr;
+    }
+    .trending {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .contentmeditation {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .description {
+        padding: 30px 0;
+    }
+    
+    .herosection {
+        grid-template-columns: 1fr;
+    }
+    
+    .description h1 {
+        font-size: 32px;
+    }
+}

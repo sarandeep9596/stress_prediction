@@ -1,0 +1,208 @@
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 10rem;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 90vh;
+    border-radius: 1rem;
+    background-color: white;
+
+}
+
+.articles-section{
+padding-left: 30%;
+padding-top: 50%;
+}
+.articles-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    
+}
+
+.articles-section p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.articlesresources{
+    position: relative;
+    bottom: 99px; 
+    left: -10%; 
+    width: auto; 
+    height: auto; 
+    border-radius: 1rem;
+}
+.view-all {
+    display: flex;
+    align-items: center;
+    color: #3B82F6;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0;
+}
+
+.view-all:hover {
+    color: #2563EB;
+}
+
+.view-all .arrow-icon {
+    width: 16px;
+    height: 16px;
+    margin-left: 0.5rem;
+}
+
+
+.topics-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.topic-card {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topic-info {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.topic-icon {
+    font-size: 1.5rem;
+}
+
+.topic-title {
+    font-weight: 500;
+}
+
+.topic-button {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topic-button .arrow-icon {
+    width: 1rem;
+    height: 1rem;
+    stroke: white;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Topic Card Variants */
+.meditation {
+    background-color: rgba(255, 112, 67, 0.1);
+}
+.meditation .topic-button {
+    background-color: #FF7043;
+}
+
+.mindfulness {
+    background-color: rgba(41, 182, 246, 0.1);
+}
+.mindfulness .topic-button {
+    background-color: #29B6F6;
+}
+
+.sleep {
+    background-color: rgba(126, 87, 194, 0.1);
+}
+.sleep .topic-button {
+    background-color: #7E57C2;
+}
+
+.mental-health {
+    background-color: rgba(66, 165, 245, 0.1);
+}
+.mental-health .topic-button {
+    background-color: #42A5F5;
+}
+
+.explore {
+    background-color: rgba(255, 87, 34, 0.1);
+}
+.explore .topic-button {
+    background-color: #FF5722;
+}
+
+/* Trending Section */
+.trending-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.trending-list {
+    list-style: none;
+}
+
+.trending-list li {
+    margin-bottom: 1rem;
+}
+
+.trending-list a {
+    color: #374151;
+    text-decoration: underline;
+    text-decoration-color: #D1D5DB;
+    transition: all 0.2s ease;
+}
+
+.trending-list a:hover {
+    color: #3B82F6;
+    text-decoration-color: #3B82F6;
+}
+
+/* SVG Styles */
+.arrow-icon {
+    fill: none;
+    stroke: currentColor;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .content-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .topic-card {
+        padding: 1rem;
+    }
+}

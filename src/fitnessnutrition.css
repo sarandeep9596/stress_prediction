@@ -1,0 +1,128 @@
+
+.contentfitness {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.descriptionfitness {
+    padding: 60px 0;
+}
+
+.descriptionfitness h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+}
+
+.descriptionfitness p {
+    font-size: 18px;
+    color: #4a4a4a;
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.explore-link {
+    display: inline-block;
+    text-decoration: none;
+    color: #1a1a1a;
+    font-weight: 600;
+    font-size: 18px;
+    transition: transform 0.2s ease;
+}
+
+.explore-link:hover {
+    transform: translateX(8px);
+}
+
+/* Articles section styles */
+.articlesfitness {
+    padding: 20px 0;
+}
+
+.articlesfitness h1, .trendingfitness h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #1a1a1a;
+}
+
+.herosectionfitness {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.herosectionfitness div {
+    border-radius: 16px;
+    padding: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.herosectionfitness div:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.herosectionfitness img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 16px;
+}
+
+.herosectionfitness p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.herosectionfitness button {
+    background-color: rgb(223, 191, 31);
+    cursor: pointer;
+    border-radius: 100px;
+    margin-top: 12px;
+}
+
+/* Special handling for the last article */
+.art6 img {
+    height: 100px;
+    object-fit: cover;
+}
+
+/* Trending section styles */
+.trendingfitness {
+    padding: 20px 0;
+}
+
+.trendingfitness ul {
+    list-style: none;
+}
+
+.trendingfitness ul li {
+    margin-bottom: 16px;
+}
+
+.trendingfitness ul li a {
+    text-decoration: none;
+    color: #4a4a4a;
+    font-size: 16px;
+    display: block;
+    padding: 12px 16px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.trendingfitness ul li a:hover {
+    background-color: white;
+    color: #1a1a1a;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+

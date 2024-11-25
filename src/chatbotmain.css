@@ -1,0 +1,255 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.chatmain {
+    display: flex;
+    height: 100vh;
+    background-size: cover;
+    background-color: #f3f4f6;
+}
+
+.sidebar {
+    width: 256px;
+    background-color: rgb(238, 234, 234);
+    transition: all 0.3s;
+    overflow: hidden;
+    border: 2px  solid black;
+}
+
+.sidebar-content {
+    padding: 20px;
+}
+
+.header {
+    background-color: rgb(238, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.new-chat-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    margin-bottom: 16px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.new-chat-btn:hover {
+    background-color: #2563eb;
+}
+
+.recent-chats {
+    margin-bottom: 24px;
+}
+
+.recent-chats-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    color: #4b5563;
+    font-size: 16px;
+}
+
+.chat-item {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    background: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-item:hover {
+    background-color: #f3f4f6;
+}
+
+.chat-title {
+    font-weight: 500;
+    font-size: 16px;
+    color: #1f2937;
+}
+
+.chat-date {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.profile-section {
+    margin-top: auto;
+}
+
+.profile-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    color: #4b5563;
+    font-size: 16px;
+}
+
+.profile-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.main-chat {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: white;
+    padding: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.chat-title h2 {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.messages-area {
+    flex: 1;
+    overflow-y: auto;
+    padding: 16px;
+    background-color: #f9fafb;
+}
+
+.message {
+    max-width: 80%;
+    margin-bottom: 16px;
+}
+
+.user-message {
+    margin-left: auto;
+}
+
+.bot-message {
+    margin-right: auto;
+}
+
+.message-content {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.user-message .message-content {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.bot-message .message-content {
+    background-color: white;
+    color: #1f2937;
+}
+
+.message-timestamp {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 4px;
+    text-align: right;
+}
+
+.input-area {
+    padding: 16px;
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+.input-container {
+    display: flex;
+    gap: 8px;
+}
+
+.message-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.message-input:focus {
+    border-color: #3b82f6;
+}
+
+.send-btn {
+    padding: 8px;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.send-btn:hover {
+    background-color: #2563eb;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: absolute;
+        height: 100%;
+        z-index: 10;
+    }
+    
+    .message {
+        max-width: 90%;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+.menu-btn,
+.copy-btn {
+    background: none;
+    border: none;
+    color: #6b7280;
+    padding: 8px;
+    border-radius: 4px;
+    transition: color 0.2s;
+}
+
+.menu-btn:hover,
+.copy-btn:hover {
+    color: #374151;
+}
+
+.hidden {
+    display: none;
+}
