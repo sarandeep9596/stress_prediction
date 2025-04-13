@@ -1,9 +1,8 @@
 services:
   - type: web
-    name: stress-monitor-api
+    name: stress-backend
     env: python
-    buildCommand: pip install -r requirements.txt
-    startCommand: python app.py
-    envVars:
-      - key: PORT
-        value: 10000
+    buildCommand: "pip install -r src/requirements.txt"
+    startCommand: "python src/app.py"
+    rootDir: src
+    plan: free
