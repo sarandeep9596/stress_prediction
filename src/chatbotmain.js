@@ -3,118 +3,118 @@ import axios from 'axios';
 import './chatbotmain.css';
 
 const Chatbotmain = () => {
-    const [input, setInput] = useState('');
-  const [response, setResponse] = useState('');
+  const [input, setInput] = useState("");
+  const [messages, setMessages] = useState([]);
 
-  const fetchModelResponse = async () => {
+  const fetchPrediction = async () => {
+    if (!input.trim()) return;
+
+    // Add user message
+    const userMessage = { type: 'user', content: input, timestamp: new Date().toLocaleTimeString() };
+    setMessages((prev) => [...prev, userMessage]);
+
     try {
-      const res = await axios.post('https://6ffe-35-227-129-107.ngrok-free.app/', {
-        input: input, // Adjust key as per your model's API
+      const res = await axios.post("http://127.0.0.1:5000/predict", {
+        input: input,
       });
-      setResponse(res.data); // Update with the model's response
+
+      const botMessage = {
+        type: 'bot',
+        content: res.data.prediction,
+        timestamp: new Date().toLocaleTimeString(),
+      };
+      setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
-      console.error('Error fetching model response:', error);
+      console.error("Error fetching prediction:", error);
+      const errorMessage = {
+        type: 'bot',
+        content: "Sorry, something went wrong!",
+        timestamp: new Date().toLocaleTimeString(),
+      };
+      setMessages((prev) => [...prev, errorMessage]);
     }
+
+    setInput("");
   };
-    return (
-        <>
-         <div class="chatmain">
-        <div class="sidebar" id="sidebar">
-            <div class="sidebar-content">
-                <div class="header">
-                    <h2 class="logo">Calmly</h2>
-                    <button class="menu-btn">
-                    <i class="fa-solid fa-bars"></i>
-                    </button>
-                </div>
-                
-                <button class="new-chat-btn">
-                <i class="fa-solid fa-circle-plus"></i>
-                    New Chat
-                </button>
-                
-                <div class="recent-chats">
-                    <div class="recent-chats-header">
-                    <i class="fa-regular fa-clock"></i>
-                        <h3>Recent Chats</h3>
-                    </div>
-                    <div class="chat-list">
-                        <button class="chat-item">
-                            <div class="chat-title">......</div>
-                            <div class="chat-date">......</div>
-                        </button>
-                        <button class="chat-item">
-                            <div class="chat-title">.......</div>
-                            <div class="chat-date">......</div>
-                        </button>
-                        <button class="chat-item">
-                            <div class="chat-title">.......</div>
-                            <div class="chat-date">.......</div>
-                        </button>
-                    </div>
-                </div>
-                
-                <div class="profile-section">
-                    <div class="profile-btn">
-                    <i class="fa-regular fa-user"></i>
-                        <span>Profile</span>
-                    </div>
-                </div>
+
+  return (
+    <>
+      <div className="chatmain">
+        <div className="sidebar" id="sidebar">
+          <div className="sidebar-content">
+            <div className="header">
+              <h2 className="logo">Calmly</h2>
+              <button className="menu-btn">
+                <i className="fa-solid fa-bars"></i>
+              </button>
             </div>
+
+            <button className="new-chat-btn">
+              <i className="fa-solid fa-circle-plus"></i>
+              New Chat
+            </button>
+
+            <div className="recent-chats">
+              <div className="recent-chats-header">
+                <i className="fa-regular fa-clock"></i>
+                <h3>Recent Chats</h3>
+              </div>
+              <div className="chat-list">
+                {/* Optional: dynamically populate recent chats */}
+              </div>
+            </div>
+
+            <div className="profile-section">
+              <div className="profile-btn">
+                <i className="fa-regular fa-user"></i>
+                <span>Profile</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-    
-        <div class="main-chat">
-            <div class="chat-header">
-                <div class="chat-title">
-                <i class="fa-regular fa-comment"></i>
-                    <h2>New Chat</h2>
-                </div>
-                <button class="copy-btn">
-                <i class="fa-regular fa-copy"></i>
-                </button>
+        <div className="main-chat">
+          <div className="chat-header">
+            <div className="chat-title">
+              <i className="fa-regular fa-comment"></i>
+              <h2>New Chat</h2>
             </div>
+            <button className="copy-btn">
+              <i className="fa-regular fa-copy"></i>
+            </button>
+          </div>
 
-           
-            <div class="messages-area">
-                <div class="message user-message">
-                    <div class="message-content">
-                        Hello, I'm feeling stressed today.
-                    </div>
-                    <div class="message-timestamp">10:30 AM</div>
-                </div>
-                <div class="message bot-message">
-                    <div class="message-content">
-                        I understand you're feeling stressed. Let's work through this together. Would you like to try a quick breathing exercise?
-                    </div>
-                    <div class="message-timestamp">10:31 AM</div>
-                </div>
+          <div className="messages-area">
+            {messages.map((msg, index) => (
+              <div
+                key={index}
+                className={`message ${msg.type === 'user' ? 'user-message' : 'bot-message'}`}
+              >
+                <div className="message-content">{msg.content}</div>
+                <div className="message-timestamp">{msg.timestamp}</div>
+              </div>
+            ))}
+          </div>
+
+          <div className="input-area">
+            <div className="input-container">
+              <input
+                type="text"
+                placeholder="Type your message..."
+                className="message-input"
+                value={input}
+                onChange={(e) => setInput(e.target.value)}
+                onKeyPress={(e) => e.key === 'Enter' && fetchPrediction()}
+              />
+              <button onClick={fetchPrediction} className="send-btn">
+                <i className="fa-regular fa-paper-plane"></i>
+              </button>
             </div>
-
-          
-            <div class="input-area">
-                <div class="input-container">
-                    <input 
-                        type="text" 
-                        placeholder="Type your message..."
-                        class="message-input"
-                        onChange={(e) => setInput(e.target.value)}
-                    ></input>
-                    <button onClick={fetchModelResponse} class="send-btn">
-                    <i class="fa-regular fa-paper-plane"></i>
-                    </button>
-                </div>
-
-                <div>
-        <h3>Model Output:</h3>
-        <p>{response ? response : "No response yet"}</p>
+          </div>
+        </div>
       </div>
-
-            </div>
-        </div>
-    </div>
-</>
-);
+    </>
+  );
 };
 
 export default Chatbotmain;

@@ -24,6 +24,18 @@ const Blogs = () => {
   const handleexplorearticleButtonClick = () => {
       navigate('/explorearticles');
   }
+  const handlemeditationdetailClick = () => {
+    navigate('/meditationdetail');
+}
+const handlemindfulnessClick = () => {
+    navigate('/mindfulness');
+}
+const handlementalhealthClick = () => {
+    navigate('/mentalhealthdetail');
+}
+const handlearticlesClick = () => {
+    navigate('/explorearticles');
+}
   return (
     
     <div className="content-grid">
@@ -44,7 +56,7 @@ const Blogs = () => {
             <h2>Choose your topic</h2>
             <div className="topics-grid">
                
-                <div className="topic-card meditation">
+                <div onClick={handlemeditationdetailClick}className="topic-card meditation">
                     <div className="topic-info">
                         <span className="topic-icon">😊</span>
                         <span className="topic-title">Meditation</span>
@@ -57,7 +69,7 @@ const Blogs = () => {
                 </div>
 
                
-                <div className="topic-card mindfulness">
+                <div onClick={handlemindfulnessClick}className="topic-card mindfulness">
                     <div className="topic-info">
                         <span className="topic-icon">🎈</span>
                         <span className="topic-title">Mindfulness</span>
@@ -69,7 +81,8 @@ const Blogs = () => {
                     </button>
                 </div>
                 <div className="topic-card sleep">
-                    <div className="topic-info">
+                <a href='https://www.verywellmind.com/bedtime-meditation-8628511'>
+                <div className="topic-info">
                         <span className="topic-icon">🌙</span>
                         <span className="topic-title">Sleep</span>
                     </div>
@@ -78,10 +91,12 @@ const Blogs = () => {
                             <path d="M9 5l7 7-7 7"/>
                         </svg>
                     </button>
+                </a>
+                    
                 </div>
 
                
-                <div className="topic-card mental-health">
+                <div onClick={handlementalhealthClick}className="topic-card mental-health">
                     <div className="topic-info">
                         <span className="topic-icon">🧠</span>
                         <span className="topic-title">Mental Health</span>
@@ -94,7 +109,7 @@ const Blogs = () => {
                 </div>
 
                 
-                <div className="topic-card explore">
+                <div onClick={handlearticlesClick}className="topic-card explore">
                     <div className="topic-info">
                         <span className="topic-icon">🔍</span>
                         <span className="topic-title">Explore our content</span>
@@ -112,12 +127,12 @@ const Blogs = () => {
         <section className="trending-section">
             <h2>Trending</h2>
             <ul className="trending-list">
-                <li><a href="#">Meditation Quotes</a></li>
-                <li><a href="#">Mindful Ringtones and Alarms</a></li>
-                <li><a href="#">Sunday Scaries</a></li>
-                <li><a href="#">Flow State</a></li>
-                <li><a href="#">Relationship Issues</a></li>
-                <li><a href="#">Meditating with Kids</a></li>
+                <li><a href="/meditationforbegineers">Meditation Quotes</a></li>
+                <li><a href="/mindfulness">Mindful articles</a></li>
+                <li><a href="https://health.clevelandclinic.org/sunday-scaries">Sunday Scaries</a></li>
+                <li><a href="https://www.medicalnewstoday.com/articles/flow-state">Flow State</a></li>
+                <li><a href="https://www.verywellmind.com/how-anxiety-can-cause-relationship-problems-1393090">Relationship Issues</a></li>
+                <li><a href="https://mindworks.org/blog/meditation-for-children/">Meditating with Kids</a></li>
             </ul>
         </section>
         <img src={articlesresources} alt="articlesresources" className="articlesresources" /> 

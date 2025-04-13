@@ -47,7 +47,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={foot} alt="Blue shoe with yellow footprint" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">How Many Steps Do People Take Per Day on Average?</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/average-steps-per-day">How Many Steps Do People Take Per Day on Average?</a></h3>
                 <p class="article-description">How many steps do people actually take per day? See how the numbers break down by age, sex,...</p>
             </div>
         </div>
@@ -56,7 +56,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={pushup} alt="People doing burpees" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">The Benefits of Burpees and How to Do Them</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/how-to-do-a-burpee">The Benefits of Burpees and How to Do Them</a></h3>
                 <p class="article-description">If you're looking for a way to build strength and endurance, burpees are a great exercise...</p>
             </div>
         </div>
@@ -65,7 +65,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={streaching} alt="Person exercising outdoors" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">12 Exercises That Burn the Most Calories</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/what-exercise-burns-the-most-calories">12 Exercises That Burn the Most Calories</a></h3>
                 <p class="article-description">Running burns the most calories per hour, but that doesn't mean it's the only exercise...</p>
             </div>
         </div>
@@ -74,7 +74,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={intense} alt="Woman doing lunges" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">What Muscle Groups Are Best to Work Out Together?</h3>
+                <h3 class="article-title"><a href="https://barbend.com/best-muscle-group-combinations-to-workout-together/</h3>">What Muscle Groups Are Best to Work Out Together?</a></h3>
                 <p class="article-description">There is no right or wrong way to pair muscle groups for a strength workout, but some...</p>
             </div>
         </div>
@@ -89,17 +89,15 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={cardio1} alt="Blue shoe with yellow footprint" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">
-                Which Is Better for Your Health: Walking or Running?</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/walking-vs-running">Which Is Better for Your Health: Walking or Running?</a>
+                </h3>
                 <p class="article-description">While running and walking are both good for your health, each has a few benefits over the other, depending on your personal…</p>
             </div>
         </div>
-
-     
         <div class="article-card">
             <img src={cardio2} alt="People doing burpees" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">What Is a Runner’s Body? It’s More Than a Look</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/fitness/runners-body">What Is a Runner’s Body? It’s More Than a Look</a></h3>
                 <p class="article-description">A runner's body is more than just a look. In fact, runners come in every shape and size. But what do they all have in common…</p>
             </div>
         </div>
@@ -108,7 +106,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={cardio3} alt="Person exercising outdoors" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">Here’s the Lowdown on How Running Affects Your Knees</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/fitness/is-running-bad-for-your-knees">Here’s the Lowdown on How Running Affects Your Knees</a></h3>
                 <p class="article-description">Lots of people want to know whether running is bad for their knees. We've got the answer, as well as how to take care of your…</p>
             </div>
         </div>
@@ -117,7 +115,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={cardio4} alt="Woman doing lunges" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">Everything to Know About VO₂ Max</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/vo2-max">Everything to Know About VO₂ Max</a></h3>
                 <p class="article-description">VO₂ max is a good benchmark for measuring your aerobic fitness levels. Learn how VO₂ max is measured, how you can increase it,</p>
             </div>
         </div>
@@ -132,8 +130,8 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={yoga1} alt="Blue shoe with yellow footprint" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">
-                Here’s How to Use Yoga for Stress Reduction</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/fitness/yoga-for-stress">Here’s How to Use Yoga for Stress Reduction</a>
+                </h3>
                 <p class="article-description">If you're interested in using yoga for stress reduction, there are a few techniques you'll…</p>
             </div>
         </div>
@@ -142,7 +140,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={yoga2} alt="People doing burpees" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">Pilates vs. Yoga: The Differences and What's Right for You</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/fitness-exercise/pilates-vs-yoga">Pilates vs. Yoga: The Differences and What's Right for You</a></h3>
             </div>
         </div>
 
@@ -150,8 +148,8 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={yoga3} alt="Person exercising outdoors" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">
-                Can Yoga Help Aid Digestion? 9 Poses to Try</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/nutrition/yoga-posture-for-digestion">Can Yoga Help Aid Digestion? 9 Poses to Try</a>
+                </h3>
                 <p class="article-description">When you have digestive issues, you may want to find relief fast. This article…</p>
             </div>
         </div>
@@ -160,7 +158,7 @@ const Fitnessmain = () => {
         <div class="article-card">
             <img src={yoga4} alt="Woman doing lunges" class="article-image"/>
             <div class="article-content">
-                <h3 class="article-title">The Health Benefits of Pilates for Older Adults</h3>
+                <h3 class="article-title"><a href="https://www.healthline.com/health/fitness/pilates-for-seniors">The Health Benefits of Pilates for Older Adults</a></h3>
                 <p class="article-description">What are the benefits of Pilates for seniors? Read on to find out how a specialized…</p>
             </div>
         </div>

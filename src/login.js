@@ -31,7 +31,7 @@ const Login = () => {
       }
 
       alert('Login successful!');
-      navigate('/home'); // Redirect to home after successful login
+      navigate("/home"); // Redirect to home after successful login
 
     } else {
       // Signup validation

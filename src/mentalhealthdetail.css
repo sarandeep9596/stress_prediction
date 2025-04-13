@@ -55,3 +55,13 @@
     object-fit: contain;
 }
 
+.cta-button {
+    display: inline-block;
+    background-color: #0066ff;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 32px;
+}

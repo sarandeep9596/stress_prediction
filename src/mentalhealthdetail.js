@@ -19,6 +19,7 @@ const Mentalhealth = () => {
 <div className='whatimage'>
 <img src={mentalhealthphone} alt="mentalhealthphone" />
 </div>
+<a href="https://mindworks.org/blog/what-is-guided-meditation/" className="cta-button">Visit resource</a>
     </div>
   </>
   );

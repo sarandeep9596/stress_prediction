@@ -82,13 +82,13 @@ const handlemeditationtechniqueClick= () => {
       <div className="trending">
         <h1>Trending</h1>
         <ul>
-          <li><a href="#">Beginning Meditation</a></li>
-          <li><a href="#">Meditation for anxiety</a></li>
-          <li><a href="#">Morning meditation</a></li>
-          <li><a href="#">Loving kindness meditation</a></li>
-          <li><a href="#">Meditation and the breath</a></li>
-          <li><a href="#">Body scan meditation</a></li>
-          <li><a href="#">Calming meditation</a></li>
+          <li><a href="./meditationforbegineers">Beginning Meditation</a></li>
+          <li><a href="https://www.verywellmind.com/mindfulness-meditation-exercise-for-anxiety-2584081">Meditation for anxiety</a></li>
+          <li><a href="https://www.calm.com/blog/morning-meditation#:~:text=Morning%20meditation%20can%20be%20a,morning%20can%20bring%20positive%20changes">Morning meditation</a></li>
+          <li><a href="https://www.mindful.org/this-loving-kindness-meditation-is-a-radical-act-of-love/">Loving kindness meditation</a></li>
+          <li><a href="https://www.health.harvard.edu/mind-and-mood/breath-meditation-a-great-way-to-relieve-stress">Meditation and the breath</a></li>
+          <li><a href="https://www.healthline.com/health/body-scan-meditation">Body scan meditation</a></li>
+          <li><a href="https://www.gaiam.com/blogs/discover/4-calming-meditation-techniques">Calming meditation</a></li>
         </ul>
       </div>
 

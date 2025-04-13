@@ -40,7 +40,7 @@ awareness and getting a healthy sense of perspective. You’re<br/>
 not trying to turn off your thoughts or feelings. You’re learning<br/>
 to observe them without judgment. And eventually, you may<br/>
 start to better understand them as well.</p>
-<button > <a href="https://my.clevelandclinic.org/health/articles/17906-meditation">Know more</a></button>
+<button > <a href="https://en.wikipedia.org/wiki/Meditation">Know more</a></button>
 </div>
 <div className='whatimage'>
 <img src={whatismeditationmain} alt="whatismeditationmain" />

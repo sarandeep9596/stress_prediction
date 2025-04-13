@@ -11,9 +11,7 @@ import mediback from './mediback.png';
 import { useNavigate } from 'react-router-dom';
 const Fitnessnutrition = () => {
   const navigate = useNavigate();
-  const handlefitnessButtonClick = () => {
-      navigate('/fitness');
-  }
+ 
   return (
     <section className="contentfitness">
       <div className="descriptionfitness">
@@ -30,37 +28,52 @@ const Fitnessnutrition = () => {
       <div className="articlesfitness" >
         <h1>Top Articles</h1>
         <div className="herosectionfitness">
-          <div onClick={handlefitnessButtonClick}>
-            <img src={article1} alt="Article1" />
+          <div >
+          <a href="/fitnessmain"> 
+          <img src={article1} alt="Article1" />
             <p>What is Fitness?</p>
             <button>
               <i className="fa-solid fa-arrow-right"></i>
             </button>
+            </a>
+            
           </div>
           <div>
-            <img src={article2} alt="Article2" />
+          <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389">
+          <img src={article2} alt="Article2" />
             <p>Fitness benefits</p>
             <button><i className="fa-solid fa-arrow-right"></i></button>
+          </a>
           </div>
           <div>
-            <img src={article3} alt="Article3" />
+          <a href="https://www.everydayhealth.com/fitness/guide/"> 
+          <img src={article3} alt="Article3" />
             <p>Guide Fitness</p>
-            <button><i className="fa-solid fa-arrow-right"></i></button>
+            <button><i className="fa-solid fa-arrow-right"></i></button></a>
+            
           </div>
           <div>
-            <img src={article4} alt="Article4" />
+          <a href="https://www.starhealth.in/blog/importance-of-nutrition/">
+          <img src={article4} alt="Article4" />
             <p>Nutrition Importance</p>
             <button><i className="fa-solid fa-arrow-right"></i></button>
+          </a>
+            
           </div>
           <div>
-            <img src={article5} alt="Article5" />
+          <a href="https://www.cdc.gov/nutrition/php/resources/healthy-eating-benefits-for-adults.html">
+          <img src={article5} alt="Article5" />
             <p>Nutrition Benefits</p>
             <button><i className="fa-solid fa-arrow-right"></i></button>
+          </a>
+            
           </div>
           <div className='art6'>
-            <img src={article6} alt="Article6" />
+          <a href="https://www.healthline.com/nutrition/how-to-eat-healthy-guide">
+          <img src={article6} alt="Article6" />
             <p>Guide Nutrition</p>
-            <button><i className="fa-solid fa-arrow-right"></i></button>
+            <button><i className="fa-solid fa-arrow-right"></i></button></a>
+            
           </div>
         </div>
       </div>
@@ -68,13 +81,13 @@ const Fitnessnutrition = () => {
       <div className="trendingfitness">
         <h1>Trending</h1>
         <ul>
-          <li><a href="#">Beginning Fitness</a></li>
-          <li><a href="#">Exercises for anxiety</a></li>
-          <li><a href="#">Morning Exercises</a></li>
-          <li><a href="#">Exercises Benefits</a></li>
-          <li><a href="#">Nutrition for beginners</a></li>
-          <li><a href="#">Important of Nutrition</a></li>
-          <li><a href="#">Impact of Nutrition and Fitness</a></li>
+          <li><a href="/fitnessmain">Beginning Fitness</a></li>
+          <li><a href="https://www.healthline.com/health/anxiety-exercises">Exercises for anxiety</a></li>
+          <li><a href="https://blog.decathlon.in/articles/20-morning-exercises-that-you-can-do-at-home">Morning Exercises</a></li>
+          <li><a href="https://www.healthline.com/nutrition/10-benefits-of-exercise">Exercises Benefits</a></li>
+          <li><a href="https://www.healthline.com/nutrition/how-to-eat-healthy-guide">Nutrition for beginners</a></li>
+          <li><a href="https://www.healthline.com/nutrition/how-to-eat-healthy-guide">Important of Nutrition</a></li>
+          <li><a href="https://www.verywellfit.com/why-you-need-nutrition-and-fitness-3121363">Impact of Nutrition and Fitness</a></li>
         </ul>
       </div>
 

@@ -24,9 +24,9 @@ const Meditationforbegineers = () => {
           <div className="author-info">
             <div className="author-avatar"></div>
             <div className="author-text">
-              Researched and written by our mindfulness and meditation experts | 
+              Researched and written by our Team | 
               <a href="#">Learn more</a>
-              <div className="date">Sep 11, 2023</div>
+              <div className="date">Nov 11, 2024</div>
             </div>
           </div>
         </div>
@@ -39,8 +39,7 @@ const Meditationforbegineers = () => {
 
            <p>
            It doesn’t take long to feel the benefits of a regular meditation practice.
-            Research shows that Headspace can reduce stress in 10 days. And thousands of 
-            studies have shown mindfulness and meditation can positively impact mental and
+            Thousands of studies have shown mindfulness and meditation can positively impact mental and
              physical health. So, no matter why we want to start meditating — to feel less
               stressed, get better sleep, be more focused, or improve relationships — every
             meditation is one step closer to building healthier habits for a happier mind.
@@ -82,7 +81,7 @@ Then gently shift our focus away from it and back onto our breath — to let the
           </p>
         </section>
         
-        <a href="#" className="cta-button">Get 50% off</a>
+        <a href="./whatismeditation" className="cta-button">Visit</a>
 
         <section className="benefits-section">
           <h2>What does meditation do?</h2>
@@ -104,7 +103,7 @@ Then gently shift our focus away from it and back onto our breath — to let the
           and noticing how the mind is. Because meditation is about being kind to our mind.</p>
         </section>
         
-        <a href="#" className="cta-button">Get 50% off</a>
+        <a href="https://www.health.harvard.edu/staying-healthy/what-meditation-can-do-for-your-mind-mood-and-health-" className="cta-button">Visit resource</a>
 
 
         <section className="benefits-section">
@@ -116,7 +115,7 @@ Then gently shift our focus away from it and back onto our breath — to let the
           <p>
           <h3>What matters most is consistency.</h3><br/>
 Ideally, we meditate a few times a week or daily. But even completing one meditation can lead to a reduction in mind wandering.
- We’ll feel more and more benefits the more we practice. Research shows that 30 days of Headspace reduces stress by a third and improves satisfaction with life.<br/>
+ We’ll feel more and more benefits the more we practice. Research shows that 30 days of Meditation reduces stress by a third and improves satisfaction with life.<br/>
 
 It might be helpful to schedule meditation sessions like an exercise class or appointment.
  Or we could tack it onto an existing routine, like every time we shower or brush our teeth.<br/>
@@ -179,7 +178,7 @@ If we miss a day or more, it’s okay. We can simply pick up where we left off.<
           </p>
         </section>
         
-        <a href="#" className="cta-button">Get 50% off</a>
+        <a href="./howtomeditate" className="cta-button">Visit</a>
 
         <section className="benefits-section">
           <h2>What happens while meditating?</h2>
@@ -223,7 +222,7 @@ We’ll probably try too hard. Meditating is different from learning other skill
           </p>
         
         </section>
-
+        <a href="https://stanfordmag.org/contents/what-happens-when-you-meditate" className="cta-button">Visit resource</a>
         <section className="benefits-section">
           <h2>What's a good meditation for beginners?</h2>
           <p>
@@ -244,7 +243,7 @@ When we get distracted by a thought, notice it, let it go, and return our focus 
           </p>
         
         </section>
-
+        <a href="https://positivepsychology.com/meditation-techniques-beginners/" className="cta-button">Visit resource</a>
         <section className="benefits-section">
           <h2>How do I stick with meditation for beginners?</h2>
           <p>
@@ -265,7 +264,7 @@ no pressure to “get it right.” As long as we show up to take time for oursel
           </p>
         
         </section>
-
+        <a href="https://www.innerpeacefellowship.org/how-to-meditate/?gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvylbHcaC7dvIyatZAvOa3luPvRH2kqZtMSkdgSijWt6OGsi4emXpZ3BoCYcwQAvD_BwE" className="cta-button">Visit resource</a>
       </main>
     </div>
   );

@@ -13,7 +13,7 @@ const Extra = () => {
     
     <div class="grid-containerextra">
        
-        <a href="#" class="cardextra">
+        <a href="./mentalhealthdetail" class="cardextra">
             <div class="card-contentextra">
                 <div class="card-icon stress-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -32,12 +32,12 @@ const Extra = () => {
                         <path d="M12 3a9 9 0 0 0 0 18 9 9 0 0 0 0-18z"/>
                     </svg>
                 </div>
-                <span class="card-title">Stress less</span>
+                <span class="card-title">relief music</span>
             </div>
             <span class="arrow">›</span>
         </a>
 
-        <a href="#" class="cardextra">
+        <a href="./fitnessmain" class="cardextra">
             <div class="card-contentextra">
                 <div class="card-icon anxiety-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -50,7 +50,7 @@ const Extra = () => {
         </a>
 
         
-        <a href="#" class="cardextra">
+        <a href="./chatbothome" class="cardextra">
             <div class="card-contentextra">
                 <div class="card-icon coach-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -62,7 +62,7 @@ const Extra = () => {
             <span class="arrow">›</span>
         </a>
 
-        <a href="#" class="cardextra">
+        <a href="./meditationdetail" class="cardextra">
             <div class="card-contentextra">
                 <div class="card-icon meditation-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -74,7 +74,7 @@ const Extra = () => {
             <span class="arrow">›</span>
         </a>
 
-        <a href="#" class="cardextra">
+        <a href="./explorearticles" class="cardextra">
             <div class="card-contentextra">
                 <div class="card-icon team-icon">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">

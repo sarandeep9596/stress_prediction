@@ -20,6 +20,8 @@ import Guidemeditation from "./guidemeditation";
 import Meditationforbegineers from "./meditationforbegineers";
 import Meditationtechnique from "./meditationtechnique";
 import Fitnessmain from "./fitnessmain"
+import Evidencebasedmeditation from "./evidencebasedmeditation"
+import Mindfulness from "./mindfulness"
 function App() {
   const [token,setToken]  =useState("");
 
@@ -38,29 +40,36 @@ function App() {
       setClientToken(token);
     }
   },[]);
-  return !token ? (
-    <Music />
-  ) : (
+  return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/home" element={<Home />} /> 
-        <Route path="/meditationdetail" element={<Meditationdetail />} />
-        <Route path="/chatbothome" element={<Chatbothome />} />
-        <Route path="/chatbotmain" element={<Chatbotmain />} />
-        <Route path="/whatismeditation" element={<Whatismeditation />} />
-        <Route path="/explorearticles" element={<Explorearticles />} />
-        <Route path="/meditationbenefits" element={<Meditationbenefits />} />
-        <Route path="/howtomeditate" element={<Howtomeditate />} />
-        <Route path="/libraryscreen" element={<Libraryscreen />} />
-        <Route path="/mentalhealthdetail" element={<Mentalhealtdetail />} />
-        <Route path="/guidemeditation" element={<Guidemeditation />} />
-        <Route path="/meditationforbegineers" element={<Meditationforbegineers />} />
-        <Route path="/meditationtechnique" element={<Meditationtechnique />} />
-        <Route path="/fitnessmain" element={<Fitnessmain />} />
+        {!token ? (
+          <Route path="*" element={<Login />} />
+        ) : (
+          <>
+            <Route path="/" element={<Home />} /> 
+            <Route path="/meditationdetail" element={<Meditationdetail />} />
+            <Route path="/chatbothome" element={<Chatbothome />} />
+            <Route path="/chatbotmain" element={<Chatbotmain />} />
+            <Route path="/whatismeditation" element={<Whatismeditation />} />
+            <Route path="/explorearticles" element={<Explorearticles />} />
+            <Route path="/meditationbenefits" element={<Meditationbenefits />} />
+            <Route path="/howtomeditate" element={<Howtomeditate />} />
+            <Route path="/libraryscreen" element={<Libraryscreen />} />
+            <Route path="/mentalhealthdetail" element={<Mentalhealtdetail />} />
+            <Route path="/guidemeditation" element={<Guidemeditation />} />
+            <Route path="/meditationforbegineers" element={<Meditationforbegineers />} />
+            <Route path="/meditationtechnique" element={<Meditationtechnique />} />
+            <Route path="/fitnessmain" element={<Fitnessmain />} />
+            <Route path="/evidencebasedmeditation" element={<Evidencebasedmeditation />} />
+            <Route path="/mindfulness" element={<Mindfulness />} />
+            <Route path="/music" element={<Music />} />
+          </>
+        )}
       </Routes>
     </Router>
   );
+  
   
 }
 

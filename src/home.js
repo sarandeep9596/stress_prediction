@@ -23,7 +23,7 @@ const Home = () => {
   }
   const handlearticlesButtonClick = () => {
       
-    navigate('/blogs');
+    navigate('/explorearticles');
 }
 const handlemeditationButtonClick = () => {
       
@@ -52,7 +52,7 @@ const handlehelpButtonClick = () => {
 <nav className='navbar'>
 <ul>
   <li onClick={handlecalmlyButtonClick}>Calmly</li>
-  <li onClick={handlevideoButtonClick}>Videos & Music</li>
+  {/* <li onClick={handlevideoButtonClick}>Videos & Music</li> */}
   <li onClick={handlearticlesButtonClick}>Articles & Resources</li>
   <li onClick={handlemeditationButtonClick}>Meditation</li>
   <li onClick={handlefitnessButtonClick}>Fitness & Nutrition</li>
@@ -75,8 +75,7 @@ const handlehelpButtonClick = () => {
         <Mentalhealth />
         <br/>
         <Blogs />
-        <br/>
-        <Music />
+        
         <br/>
         <Footer />
       </main>

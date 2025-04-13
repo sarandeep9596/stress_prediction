@@ -136,10 +136,10 @@
     cursor: pointer;
   }
 
-  .container {
+  .containermeditation {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content:flex-start;
     width: 80%;
     margin: 0 auto;
     padding: 20px;

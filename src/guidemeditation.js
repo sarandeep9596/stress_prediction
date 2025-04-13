@@ -24,9 +24,9 @@ const Guidemeditation = () => {
           <div className="author-info">
             <div className="author-avatar"></div>
             <div className="author-text">
-              Researched and written by our mindfulness and meditation experts | 
+              Researched and written by our Team | 
               <a href="#">Learn more</a>
-              <div className="date">Sep 11, 2023</div>
+              <div className="date">Nov 11, 2024</div>
             </div>
           </div>
         </div>
@@ -68,8 +68,8 @@ const Guidemeditation = () => {
           </p>
         </section>
         
-        <a href="#" className="cta-button">Get 50% off</a>
-
+        <a href="https://mindworks.org/blog/what-is-guided-meditation/" className="cta-button">Visit resource</a>
+        
         <section className="benefits-section">
           <h2>Where to experience guided meditation</h2>
           <p>
@@ -84,7 +84,7 @@ const Guidemeditation = () => {
    
         </section>
         
-        <a href="#" className="cta-button">Get 50% off</a>
+        <a href="https://thekramecenter.org/guided-meditations-and-exercises/?gad_source=1&gclid=CjwKCAiA3ZC6BhBaEiwAeqfvyjPq8rvtL0bA7prfz5xjKv31SsRGXD4ty-8ZEv0ZyWXhQGpemDc64RoC-0YQAvD_BwE" className="cta-button">Visit resource</a>
 
 
         <section className="benefits-section">
@@ -113,7 +113,7 @@ const Guidemeditation = () => {
         
         </section>
         
-        <a href="#" className="cta-button">Get 50% off</a>
+        <a href="https://jeweliaorlick.com/blog/post/guided-verus-unguided" className="cta-button">Visit resource</a>
 
         <section className="benefits-section">
           <h2>Guided vs unguided meditation</h2>
@@ -135,7 +135,7 @@ const Guidemeditation = () => {
           </p>
         
         </section>
-
+        
         <section className="benefits-section">
           <h2>The benefits of guided and unguided meditation</h2>
           <p>
@@ -145,11 +145,14 @@ const Guidemeditation = () => {
              depression and chronic pain. Consistent meditators who have trouble sleeping may sleep
               better and demonstrate improved immune function. In a study done with the U.S. Marines
                even showed that practicing meditation could help them be more focused in the field.
-Research (conducted in third-party studies) shows that guided digital meditations can be just as effective as in-person meditation classes for some people. People who meditated with apps like Headspace showed significant improvements in well-being and job strain. For some people, building a consistent meditation habit becomes easier when the tools for meditating exist in an easy-to-grab app; with an app, you can fit meditation into any schedule or space.
+Research (conducted in third-party studies) shows that guided digital meditations can be just as effective 
+as in-person meditation classes for some people. People who meditate showed significant improvements in well-being
+ and job strain. For some people, building a consistent meditation habit becomes easier when the tools for meditating exist in an easy-to-grab app;
+  with an app, you can fit meditation into any schedule or space.
           </p>
         
         </section>
-
+        <a href="https://declutterthemind.com/blog/guided-vs-unguided-meditation" className="cta-button">Visit resource</a>
         <section className="benefits-section">
           <h2>Is unguided meditation more effective than guided meditation?</h2>
           <p>
@@ -168,13 +171,14 @@ Research (conducted in third-party studies) shows that guided digital meditation
           </p>
         
         </section>
-
+        <a href="https://happiful.com/whats-the-difference-between-guided-and-unguided-meditation" className="cta-button">Visit resource</a>
+        
         <section className="benefits-section">
           <h2>Why people choose to meditate</h2>
           <p>
           For many people, meditation has become a tool for managing stress.
            For some, it helps to promote improved health, including a better
-            quality of sleep. For others, it helps them get some ‘headspace’ — that underlying
+            quality of sleep. For others, it helps them get some ‘zenify’ — that underlying
              sense of peace, and that feeling of contentment, no matter what they’re dealing
               with in life. When we’re in a healthier place mentally, then we’re bound to interact
                with others in a more positive way,
@@ -196,6 +200,7 @@ Research (conducted in third-party studies) shows that guided digital meditation
            with the aim of fundamentally transforming our experience, and perspective, of everyday life.
           </p>
         </section>
+        <a href="https://link.springer.com/article/10.1007/s12671-020-01367-w" className="cta-button">Visit resource</a>
       </main>
     </div>
   );
