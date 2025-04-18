@@ -11,9 +11,7 @@ A web-based AI solution that predicts user stress levels using NLP and Machine L
 - 🔒 Secure user login (in progress)
 - 💪 Fitness and Nutrition suggestions
 
- 🚀 Live Demo
-
-- Frontend: (this is front end repo)
+ 
 - Backend API: [FastAPI Docs](https://stress-monitoring-backend.onrender.com/docs)
 
 🛠️ Tech Stack
