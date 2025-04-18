@@ -12,9 +12,8 @@ const Chatbotmain = () => {
     // Add user message
     const userMessage = { type: 'user', content: input, timestamp: new Date().toLocaleTimeString() };
     setMessages((prev) => [...prev, userMessage]);
-
     try {
-      const res = await axios.post("http://127.0.0.1:5000/predict", {
+      const res = await axios.post("https://stress-monitoring-backend.onrender.com/predict", {
         input: input,
       });
 
