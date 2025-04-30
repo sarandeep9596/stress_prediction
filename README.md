@@ -43,7 +43,8 @@ You can add:
 - ![image](https://github.com/user-attachments/assets/16d4d9c3-04a4-49f8-aca4-d12577e9fce9)
 
 - Chatbot prediction
-- 
+- ![image](![Screenshot 2025-04-13 144757](https://github.com/user-attachments/assets/b71fb7e5-f8c8-4e46-8391-b838f81cc760)
+)
 - Meditation page
 - ![image](https://github.com/user-attachments/assets/84bd48b0-b531-4df8-a028-c51ccc746e12)
 
