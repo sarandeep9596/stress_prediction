@@ -1,9 +1,8 @@
 
 Calmly: AI-Powered Mental Health Monitoring System 🌿
 A web-based AI solution that predicts user stress levels using NLP and Machine Learning, and provides personalized stress-relief tools through an interactive chatbot interface.
-```
 
-#### 🌟 Features
+ 🌟 Features
 - ✅ Stress level prediction (scale of 1–10)
 - 🤖 Chatbot interaction (`Calmly`)
 - 🧘 Meditation & Relaxation music
