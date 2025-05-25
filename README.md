@@ -1,5 +1,5 @@
 
-Calmly: AI-Powered Mental Health Monitoring System 🌿
+Zenify your life: AI-Powered Mental Health Monitoring System 🌿
 A web-based AI solution that predicts user stress levels using NLP and Machine Learning, and provides personalized stress-relief tools through an interactive chatbot interface.
 
  🌟 Features
